@@ -1,0 +1,10 @@
+---
+applications:
+- name: contoso-gaming-platfrom
+  memory: 512M
+  diskQuota: 512M
+  instances: 1
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git#v4.16
+  path: contoso-gaming-platfrom-1.0.0-SNAPSHOT.jar
+  env:
+    JBP_CONFIG_OPEN_JDK_JRE: ' {jre: { version: 11.+}}'
